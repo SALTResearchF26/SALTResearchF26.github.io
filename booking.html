@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Book a tutoring session with ABC Tutoring."
+    >
+
+    <title>Book a Session | ABC Tutoring</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}p||((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",p.onerror=function(){p=null},(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="al ol ll init Il Rl Tl Ml Ol za El Dl Sl capture getExtension Pl nl Hl calculateEventProperties Bl register register_once register_for_session unregister unregister_for_session Vl Cl zl getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Gl identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset Zl shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Ul ql createPersonProfile setInternalOrTestUser Wl ul hl opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing $l debug Ua Jn getPageViewId captureTraceFeedback captureTraceMetric bl".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_nC7H6nbEGzBbhbCHbXcRWmX8Vxw78qpoor8ZfxKBzNas', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2026-05-30',
+            person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="home.html" class="logo">ABC Tutoring</a>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tutors.html">Tutors</a></li>
+                <li><a href="booking.html">Book a Session</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="booking-page">
+        <section class="booking-box">
+            <div class="booking-heading">
+                <p class="eyebrow">Schedule a session</p>
+                <h1>Book a Tutor</h1>
+
+                <p>
+                    Choose an available appointment and enter the requested
+                    information below.
+                </p>
+            </div>
+
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="tutor">Tutor</label>
+
+                    <select id="tutor" name="tutor" required>
+                        <option value="">Select a tutor</option>
+                        <option value="sarah-johnson">Sarah Johnson</option>
+                        <option value="michael-chen">Michael Chen</option>
+                        <option value="emily-rodriguez">
+                            Emily Rodriguez
+                        </option>
+                        <option value="david-williams">David Williams</option>
+                        <option value="aisha-patel">Aisha Patel</option>
+                        <option value="james-thompson">James Thompson</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-time">Available time</label>
+
+                    <select
+                        id="appointment-time"
+                        name="appointmentTime"
+                        required
+                    >
+                        <option value="">Select an available time</option>
+                        <option value="monday-4pm">Monday at 4:00 PM</option>
+                        <option value="monday-5pm">Monday at 5:00 PM</option>
+                        <option value="tuesday-4pm">Tuesday at 4:00 PM</option>
+                        <option value="tuesday-5pm">Tuesday at 5:00 PM</option>
+                        <option value="wednesday-4pm">
+                            Wednesday at 4:00 PM
+                        </option>
+                        <option value="thursday-5pm">
+                            Thursday at 5:00 PM
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="parent-name">Parent’s name</label>
+
+                    <input
+                        type="text"
+                        id="parent-name"
+                        name="parentName"
+                        autocomplete="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone-number">Phone number</label>
+
+                    <input
+                        type="tel"
+                        id="phone-number"
+                        name="phoneNumber"
+                        autocomplete="tel"
+                        placeholder="Example: 555-123-4567"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="student-name">Student’s first name</label>
+
+                    <input
+                        type="text"
+                        id="student-name"
+                        name="studentName"
+                        autocomplete="off"
+                        placeholder="Enter the student's first name"
+                        required
+                    >
+    
+                    <label for="student-grade">Student’s grade</label>
+
+                    <select id="student-grade" name="studentGrade" required>
+                        <option value="">Select the student's grade</option>
+                        <option value="K">Kindergarten</option>
+                        <option value="1">1st grade</option>
+                        <option value="2">2nd grade</option>
+                        <option value="3">3rd grade</option>
+                        <option value="4">4th grade</option>
+                        <option value="5">5th grade</option>
+                        <option value="6">6th grade</option>
+                        <option value="7">7th grade</option>
+                        <option value="8">8th grade</option>
+                        <option value="9">9th grade</option>
+                        <option value="10">10th grade</option>
+                        <option value="11">11th grade</option>
+                        <option value="12">12th grade</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="booking-button">
+                    Confirm Booking
+                </button>
+            </form>
+
+            <div
+                id="booking-confirmation"
+                class="booking-confirmation"
+                role="status"
+                hidden
+            >
+                <h2>Booking confirmed!</h2>
+                <p>
+                    Your tutoring session has been scheduled. ABC Tutoring will
+                    contact you with additional information.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ABC Tutoring. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
